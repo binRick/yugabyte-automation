@@ -21,6 +21,9 @@ echo -ne "Adding A New Node to Cluster  "
 time yb-docker-ctl add_node >/dev/null 2>&1
 echo -e "OK\n\n"
 
+echo -ne "Listening Ports  \n"
+./get_listening_ports_docker.sh|grep '^[0-9]'
+echo -e "OK\n\n"
 
 docker ps
 yb-docker-ctl status
