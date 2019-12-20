@@ -1,6 +1,9 @@
 
 set -e
-MODULES="psycopg2-binary"
+MODULES="\
+	psycopg2-binary \
+	yedis \
+"
 
 command -v python3 >/dev/null
 
