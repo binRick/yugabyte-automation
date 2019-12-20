@@ -4,10 +4,10 @@ import psycopg2, os, sys, json
 #DBCONN = "host=127.0.0.1 port=5433 dbname=postgres user=postgres password=postgres"
 DBCONN = "host={} port={} dbname={} user={} password={}".format(
 			os.environ['DB_HOST'],
-			os.environ['DB_PORT'],
-			os.environ['DB_NAME'],
-			os.environ['DB_USER'],
-			os.environ['DB_PASS'],
+			os.environ.get('DB_PORT',5433),
+			os.environ.get('DB_NAME','postgres'),
+			os.environ.get('DB_USER','postgres'),
+			os.environ.get('DB_PASS','postgres'),
 		)	
 
 print(DBCONN)
