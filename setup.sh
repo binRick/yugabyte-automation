@@ -21,4 +21,3 @@ echo $PATH|grep $(pwd)/yugabyte-2.0.8.0/bin -q || export PATH=$(pwd)/yugabyte-2.
 [[ -f ~/.local/bin/yb-docker-ctl ]] || wget -q4 https://raw.githubusercontent.com/yugabyte/yugabyte-db/master/bin/yb-docker-ctl -O ~/.local/bin/yb-docker-ctl
 chmod +x ~/.local/bin/yb-docker-ctl
 
-
