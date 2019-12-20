@@ -2,6 +2,8 @@
 set -e
 docker-compose up -d
 
+./start_redis_server.py
+
 IP=$(./getLocalAddress.sh)
 
 echo YugaByte DB Admin:     http://$IP:7000/
