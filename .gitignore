@@ -2,3 +2,6 @@ yugabyte*.tar.gz
 yugabyte-*.*
 *.swp
 yb-sample-apps.jar
+data/
+sample-data.tgz
+schema.sql
