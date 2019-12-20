@@ -1,2 +1,2 @@
-. install.sh
+. setup.sh
 yb-ctl create
